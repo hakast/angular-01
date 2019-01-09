@@ -11,6 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(private data: FormdataService) { }
 
   ngOnInit() {
-    
+// skriver något för att kunna committa
   }
 }
