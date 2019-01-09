@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { NavComponent } from './nav/nav.component';
 import { ReadMoreServiceComponent } from './readMore/read-more-service/read-more-service.component';
+
+import { NavComponent } from './nav/nav.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { ReadMoreServiceComponent } from './readMore/read-more-service/read-more
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
