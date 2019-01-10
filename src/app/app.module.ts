@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { simpleReducer } from './app.component';
+import { MatGridListModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
 import { ReadMoreServiceComponent } from './readMore/read-more-service/read-more-service.component';
 import { NavComponent } from './nav/nav.component';
 import { PicsComponent } from './pics/pics.component';
@@ -26,7 +29,10 @@ import { PicsComponent } from './pics/pics.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule,
+    MatToolbarModule,
+    StoreModule.forRoot({ message: simpleReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

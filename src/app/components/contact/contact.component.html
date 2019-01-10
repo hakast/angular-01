@@ -2,20 +2,21 @@
 <h1>Kontakta oss</h1>
 
 <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-
   <h5 *ngIf="success">Ditt meddelande är skickat!</h5>
 
   <label>
-    Namn:
-    <input type="text" formControlName="name">
-    <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+    <!-- Namn: -->
+    <i class="material-icons">face</i>
+    <input type="text" formControlName="name" placeholder="Namn">
+    <div *ngIf="submitted && messageForm.controls.name.errors" class="error"> 
       <div *ngIf="messageForm.controls.name.errors.required">Skriv in ditt namn</div>
     </div>
   </label>
 
   <label>
-    Meddelande:
-    <textarea formControlName="message"></textarea>
+    <!-- Meddelande: -->
+    <i class="material-icons">sort</i>
+    <textarea formControlName="message" placeholder="Meddelande"></textarea>
     <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
       <div *ngIf="messageForm.controls.message.errors.required">Skriv in ditt meddelande</div>
     </div>

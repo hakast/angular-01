@@ -1,5 +1,5 @@
 import { Component, OnInit  } from '@angular/core';
-import { FormdataService } from '../formdata.service';
+import { FormdataService } from '../../formdata.service';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(private data: FormdataService) { }
 
   ngOnInit() {
-// skriver något för att kunna committa
+    
   }
 }
