@@ -1,19 +1,9 @@
 <div class="picsContainer">
 
-<mat-grid-list cols="5" rowHeight="1:1" gutterSize="10px"  >
-
-    <a href="../../assets/gallery/bild_1.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_1.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_2.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_2.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_3.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_3.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_4.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_4.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_5.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_5.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_6.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_6.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_7.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_7.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_8.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_8.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_9.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_9.jpg"></mat-grid-tile></a>
-    <a href="../../assets/gallery/bild_10.jpg"><mat-grid-tile><img src="../../assets/gallery/bild_10.jpg"></mat-grid-tile></a>
+ <p [ngStyle]="{'color': 'white'}">Dynamic Generating Github Users (Click for account)</p>
+<mat-grid-list *ngIf="users" cols="5" rowHeight="1:1" gutterSize="10px">
+    <mat-grid-tile *ngFor="let user of users">
+        <a href="{{user.html_url}}" target="_blank"><img [src]="user.avatar_url" width="100%"></a>
+</mat-grid-tile>
 
 </mat-grid-list>
-
-</div>
-
