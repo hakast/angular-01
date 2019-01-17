@@ -1,4 +1,5 @@
 - Deployed to live host http://hakvik.se/angular1/
-- Same layout as react1 http://hakvik.se/react1/#/
+- Almost same layout as react1 http://hakvik.se/react1/#/
 - Built in Angular 7
-- 
+- Responsive
+-

@@ -5,8 +5,13 @@
     padding: 15px;
     border: solid 1px black;
     border-radius: 7px;
+    margin-bottom: 80px;
 }
 
 img {
     border-radius: 15px;
+}
+
+mat-grid-tile-footer {
+    font-size: 1.7vw;
 }

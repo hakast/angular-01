@@ -1,0 +1,56 @@
+div {
+    max-width: 30%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    // padding-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid rgb(230, 224, 224);
+    float: left;
+}
+.example-header-image {
+    margin-top: 0px;
+}
+mat-card {
+    color: rgba(0,0,0,.87);
+}
+
+mat-card-title {
+    font-size: 1.7vw;
+    font-weight: 500;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+}
+mat-card-subtitle {
+    color: rgba(0,0,0,.54);
+    font-size: 1.3vw;
+    position: absolute;
+    right: 10%;
+    top: 9%;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+// img {
+//     margin: 20px;
+// }
+
+.mat-card-header-text {
+    margin-top: 0px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+.textContent{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    color: rgba(124, 122, 122, 0.87);
+    font-size: 1.5vw;
+}
+button {
+     margin-bottom: 20px;
+     border: 1 solid rgb(218, 214, 214);
+     background-color: white;
+     float: right;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-pics',
@@ -10,13 +10,13 @@ import { DataService } from '../data.service';
 
 export class PicsComponent implements OnInit {
   users: Object;
-
-  constructor(private data: DataService) { 
+  
+  constructor(private test: DataService) { 
 
   }
 
   ngOnInit() {
-    this.data.getImages().subscribe(data => {
+    this.test.getImages().subscribe(data => {
       this.users = data
       // console.log(this.users);
     }

@@ -24,7 +24,8 @@ label {
     }
 }
 
-.cta {
+.button {
+    margin-bottom: 20px;
     background: red;
     border: none;
     color: white;
@@ -38,12 +39,18 @@ label {
 
 .results {
     margin-top: 50px;
-
     strong {
         display: block;
     }
     span {
         margin-bottom: 20px;
-        display: block;
+        display: inline-block;
     }
+}
+agm-map {
+    height: 300px;
+    width: 80%;
+}
+.map {
+    margin-bottom: 60px;
 }
