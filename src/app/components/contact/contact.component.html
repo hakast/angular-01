@@ -5,8 +5,6 @@
   <h5 *ngIf="success">Ditt meddelande är skickat!</h5>
 
   <label>
-    <!-- Namn: -->
-    <i class="material-icons">face</i>
     <input type="text" formControlName="name" placeholder="Namn">
     <div *ngIf="submitted && messageForm.controls.name.errors" class="error"> 
       <div *ngIf="messageForm.controls.name.errors.required">Skriv in ditt namn</div>
@@ -14,8 +12,6 @@
   </label>
 
   <label>
-    <!-- Meddelande: -->
-    <i class="material-icons">sort</i>
     <textarea formControlName="message" placeholder="Meddelande"></textarea>
     <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
       <div *ngIf="messageForm.controls.message.errors.required">Skriv in ditt meddelande</div>
@@ -35,10 +31,11 @@
 </div>
 
 <div class="map">
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+  <agm-map [zoom]=12 [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
 </div>
 
 </div>
+
 

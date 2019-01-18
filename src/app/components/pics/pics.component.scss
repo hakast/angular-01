@@ -1,11 +1,18 @@
+p {
+    font-family: Montserrat;
+    margin-top: -0px;
+    text-align: center;
+}
 
 .picsContainer {
-    margin: 30px;
-    background-color:black;
+    max-width: 770px;
+    margin: auto;
+    margin-top: 20px;
+    // background-color:rgb(44, 43, 43);
     padding: 15px;
-    border: solid 1px black;
     border-radius: 7px;
     margin-bottom: 80px;
+    border: 1px solid rgb(148, 144, 144);
 }
 
 img {
@@ -14,4 +21,5 @@ img {
 
 mat-grid-tile-footer {
     font-size: 1.7vw;
+    color: white;
 }

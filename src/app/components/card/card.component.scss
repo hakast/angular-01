@@ -1,3 +1,12 @@
+section {
+    max-width: 835px;
+    margin: auto;
+}
+.cardPadding {
+    margin-left:5%;
+    margin-right:5%;
+}
+
 div {
     max-width: 30%;
     margin-left: 20px;
@@ -15,7 +24,7 @@ mat-card {
 }
 
 mat-card-title {
-    font-size: 1.7vw;
+    font-size: 14px;
     font-weight: 500;
     position: absolute;
     right: 10%;
@@ -23,7 +32,7 @@ mat-card-title {
 }
 mat-card-subtitle {
     color: rgba(0,0,0,.54);
-    font-size: 1.3vw;
+    font-size: 10px;
     position: absolute;
     right: 10%;
     top: 9%;
@@ -33,9 +42,6 @@ mat-card-subtitle {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
-// img {
-//     margin: 20px;
-// }
 
 .mat-card-header-text {
     margin-top: 0px;
@@ -44,13 +50,34 @@ mat-card-subtitle {
     margin-left: 16px;
 }
 .textContent{
-    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-family: Montserrat;
     color: rgba(124, 122, 122, 0.87);
-    font-size: 1.5vw;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-left: -13px;
+    margin-right: -13px;
+    // text-align: justify;
+}
+mat-card-actions {
+    margin: auto;
+    width: 50%;
 }
 button {
-     margin-bottom: 20px;
-     border: 1 solid rgb(218, 214, 214);
-     background-color: white;
-     float: right;
+    width: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(218, 214, 214);
+    background-color: white;
+    font-size: 10px;
+    font-weight: 800;
+    font-family: Montserrat;
+    color: rgb(88, 82, 82);
+    padding: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-align: center;
+
+}
+button:hover {
+    background-color: #E11313;
+    color: white;
 }

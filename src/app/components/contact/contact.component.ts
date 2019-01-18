@@ -10,8 +10,8 @@ import { MapsService } from '../../maps.service';
 })
 export class ContactComponent implements OnInit {
 
-  lat: string = '';
-  lng: string = '';
+  lat: number = 59.303230;
+  lng: number = 18.099890;
 
   location: Object;
 
@@ -27,11 +27,6 @@ export class ContactComponent implements OnInit {
       name: ['', Validators.required],
       message: ['', Validators.required]
     });
-    this.map.getLocation().subscribe(data => {
-      console.log(data);
-      this.lat = data.latitude;
-      this.lng = data.longitude;
-    })
   }
 
   onSubmit() {
@@ -41,7 +36,8 @@ export class ContactComponent implements OnInit {
       return;
     }
     this.success = true;
-    // console.log(this.messageForm.controls.name.value)
+    console.log(this.messageForm.controls.name.value)
+    console.log(this.messageForm.controls.message.value)
 
   
 

@@ -1,7 +1,11 @@
+h1 {
+    font-family: Montserrat;
+    color: gray;
+}
 .contactPage {
-    width: 80%;
-    margin: 0 auto;
-
+    max-width: 800px;
+    // margin-left: 30px;
+    margin: auto;
 }
 label {
     display: block;
@@ -49,8 +53,14 @@ label {
 }
 agm-map {
     height: 300px;
-    width: 80%;
+}
+
+form {
+    width: 40%;
 }
 .map {
+    border-radius: 7px;
+    width: 100%;
     margin-bottom: 60px;
+    border: solid 1px rgb(204, 203, 203);
 }

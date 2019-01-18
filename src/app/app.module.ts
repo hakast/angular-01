@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { MatGridListModule, MatToolbarModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { AgmCoreModule } from '@agm/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -42,7 +43,8 @@ import { CardComponent } from './components/card/card.component';
       apiKey: 'AIzaSyBfBDsLeyUU9ZYLzE-zqprOgF2CfPjcLdo'
     })
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: 
+    [{ provide: LocationStrategy, useClass: HashLocationStrategy }],  
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
