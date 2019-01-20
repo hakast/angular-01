@@ -11,7 +11,7 @@ section {
         position: relative;
         margin-bottom: 10px;
         padding-left: 20px;
-        padding-top: 5px;
+        padding-top: 20px;
         background-color: #E11313;
         color: white;
         
@@ -22,7 +22,8 @@ section {
         .h6 {
         color: white;
         font-size: 12px;
-        margin-top: -8px;
+        margin-top: 8px;
+        margin-bottom: 30px;
         }
 
         .textAreaTjanster {
@@ -61,4 +62,15 @@ section {
         border: 0px;
         margin-top: 30px;
         margin-bottom: 20px;
+}
+
+// CLOSABLE ALERT
+ngb-alert {
+    position: relative;
+    top: -500px;
+    width: 250px;
+    height: 104px;
+    margin: auto;
+    z-index: 1;
+    border-radius: 5px;
 }

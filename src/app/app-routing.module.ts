@@ -9,11 +9,11 @@ import { PicsComponent } from './components/pics/pics.component'
 import { CardComponent } from './components/card/card.component'
 
 const routes: Routes = [
-  { path: '', component: CardComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'pics', component: PicsComponent },
-  { path: 'card', component: HomeComponent },
+  { path: 'card', component: CardComponent },
   { path: 'readMoreService', component: ReadMoreServiceComponent },
 ];
 

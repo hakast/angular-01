@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { StoreModule } from '@ngrx/store';
 import { MatGridListModule, MatToolbarModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { AgmCoreModule } from '@agm/core';
@@ -32,6 +32,7 @@ import { CardComponent } from './components/card/card.component';
     CardComponent,
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,

@@ -70,6 +70,7 @@ button {
     font-size: 10px;
     font-weight: 800;
     font-family: Montserrat;
+    letter-spacing: 1px;
     color: rgb(88, 82, 82);
     padding: 12px;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -78,6 +79,7 @@ button {
 
 }
 button:hover {
-    background-color: #E11313;
+    background-color: rgb(90, 89, 89);
     color: white;
+    border-radius: 5px;
 }
